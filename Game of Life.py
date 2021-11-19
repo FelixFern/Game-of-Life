@@ -16,7 +16,7 @@ print(a)
 
 def generate_data():
     steps = [[-1, -1], [-1, 0], [-1, 1], [0, 1], [0, -1], [1, -1], [1, 0], [1, 1]]
-    saved_a = a
+    saved_a = np.copy(a)
     for i in range(len(a)):
         for j in range(len(a)):
             count = 0
